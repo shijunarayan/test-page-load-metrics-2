@@ -1,5 +1,3 @@
-
-   
 <!DOCTYPE html>
 <html>
 <head>
@@ -11,21 +9,8 @@
   
 <!-- DO NOT EDIT BELOW THIS LINE -->
 <!-- Mainstay Web Chat -->
-<script>
-    document.addEventListener("DOMContentLoaded", function(event) {
-        let head = document.querySelector("head");
-
-        let loadJs = function(src) {
-            let jsLink = document.createElement("script");
-            jsLink.src = src;
-            jsLink.defer = true;
-            head.appendChild(jsLink);
-        };
-
-        loadJs("https://webbot.staging.mainstay.com/static/js/webchat.js");
-    });
-</script>
 <script>window.admitHubBot = {botToken: "cb5a04d1766c426c8", collegeId: "admithubUniversityWebBot"};</script>
+<script defer src="https://webbot.staging.mainstay.com/static/js/webchat.js"></script>
 <link defer rel="stylesheet" type="text/css" href="https://webbot.staging.mainstay.com/static/css/webchat.css">
 <!-- DO NOT EDIT ABOVE THIS LINE -->
 </body>
