@@ -5,12 +5,18 @@
 </head>
 <body>
 
-<h1>Test page load with defer using https://pagespeed.web.dev/<h1>
+<h1>Test page load wrapped in Load function using https://pagespeed.web.dev/<h1>
   
 <!-- DO NOT EDIT BELOW THIS LINE -->
 <!-- Mainstay Web Chat -->
+<script>
+    document.addEventListener("load", function(event) {
+        const script = document.createElement("script");
+        script.src = "https://webbot.staging.mainstay.com/static/js/webchat.js";
+        document.body.appendChild(script);
+    });
+</script>
 <script>window.admitHubBot = {botToken: "cb5a04d1766c426c8", collegeId: "admithubUniversityWebBot"};</script>
-<script defer src="https://webbot.staging.mainstay.com/static/js/webchat.js"></script>
 <link defer rel="stylesheet" type="text/css" href="https://webbot.staging.mainstay.com/static/css/webchat.css">
 <!-- DO NOT EDIT ABOVE THIS LINE -->
 </body>
