@@ -6,11 +6,12 @@
 <body>
 
 <h1>Test page load wrapped in Load function using https://pagespeed.web.dev/<h1>
+<h2>v2</h2>
   
 <!-- DO NOT EDIT BELOW THIS LINE -->
 <!-- Mainstay Web Chat -->
 <script>
-    document.addEventListener("load", function(event) {
+    window.addEventListener("load", function(event) {
         const script = document.createElement("script");
         script.src = "https://webbot.staging.mainstay.com/static/js/webchat.js";
         document.body.appendChild(script);
